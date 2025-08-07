@@ -115,11 +115,11 @@ function generate_hosts_to_test() {
 
 # Exécution
 fetch_scope "h1" "$HACKERONE_API_KEY" "$HACKERONE_USERNAME"
-# fetch_scope "ywh" "$YWH_API_TOKEN"
+fetch_scope "ywh" "$YWH_API_TOKEN"
 process_wildcard_scope "h1"
-# process_wildcard_scope "ywh"
+process_wildcard_scope "ywh"
 list_already_tested_hosts
 generate_hosts_to_test "h1"
-# generate_hosts_to_test "ywh"
+generate_hosts_to_test "ywh"
 ntfy pub $subject "Récupération des scopes terminée"
 
