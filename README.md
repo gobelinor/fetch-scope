@@ -20,9 +20,10 @@ HACKERONE_USERNAME=votre_username
 
 # YesWeHack (optionnel)
 YWH_API_KEY=votre_JWT_YWH
-(il faut se connecter à YWH et recuperer votre cookie de session JWT pour le .env)
 
 ```
+
+(il faut se connecter à l'app web YWH et recuperer votre cookie de session JWT pour renseigner le .env)
 
 ## Usage
 ```bash
